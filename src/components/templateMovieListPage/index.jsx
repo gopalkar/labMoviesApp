@@ -18,7 +18,7 @@ const styles = {
   },
 };
 
-function MovieListPageTemplate({ movies, title, selectFavourite }) {
+function MovieListPageTemplate({ props }) {
     const movies = props.movies
     const title = props.title
     const selectFavourite = props.selectFavourite
