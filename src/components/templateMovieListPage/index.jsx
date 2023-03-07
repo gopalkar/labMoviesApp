@@ -18,11 +18,12 @@ const styles = {
   },
 };
 
-function MovieListPageTemplate({ props }) {
-    const movies = props.movies
-    const title = props.title
-    const selectFavourite = props.selectFavourite
-
+function MovieListPageTemplate({ movies, title, selectFavourite }) {
+  
+  const [titleFilter, setTitleFilter] = useState("");
+  const [genreFilter, setGenreFilter] = useState("0");
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  
   const genreId = Number(genreFilter);
 
   let displayedMovies = movies
